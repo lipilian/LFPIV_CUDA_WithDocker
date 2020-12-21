@@ -15,7 +15,7 @@ Optional:
  * py2exe (for packaging into standalone)
 
 Building on Mac
- * Install QCam for Python 
+ * Install QCam for Python (TODO : I will check if necessary)
  * Install FreeImage (into /usr/local/lib, etc. as a shared library) 
  * Install PyQt 
  * Install setuptools (using ez_setup.py to bootstrap initially) 
