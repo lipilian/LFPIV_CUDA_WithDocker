@@ -1,13 +1,13 @@
 """
 Main application for LFDisplay
 """
-
+# %% import package
 from PyQt4 import QtCore, QtGui
 import sys
 import os
 import os.path
 
-# allow eggs to be dropped into application folder, as well as script
+# %% allow eggs to be dropped into application folder, as well as script
 # overrides, etc.
 sys.path = ['.'] + sys.path
 
@@ -38,7 +38,7 @@ if not settings.contains('app/resource_path') or not os.path.exists(os.path.join
     settings.setValue('app/resource_path',resource_path)
 
 
-# Show the splash screen
+# %% Show the splash screen
 splash_path = os.path.join(settings.getString('app/resource_path'), 'splash.png')
 splash = QtGui.QSplashScreen(QtGui.QPixmap(splash_path))
 splash.show()
@@ -91,3 +91,5 @@ result=app.exec_()
 
 # exit
 sys.exit(result)
+
+# %%
